@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Fake Calls</string>
+
+    <string name="preferences">Налаштування дзвінка</string>
+    <string name="phone_number">Введи контакти</string>
+    <string name="number_hint">тицяй номер сюди...</string>
+    <string name="choose_character">Обери героя: </string>
+    <string name="time">О котрій бажаєш побазікати?</string>
+    <string name="choose_time">Обери час порятунку: </string>
+    <string name="button">Час злиняти!</string>
+</resources>

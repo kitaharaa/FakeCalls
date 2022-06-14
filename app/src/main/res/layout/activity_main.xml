@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+
+    android:layout_margin="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/phone_number"
+            android:paddingRight="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_number"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/enter_number"
+            android:layout_width="195dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:hint="@string/number_hint"
+            android:inputType="phone"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/choose_character"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:text="@string/choose_character"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingBottom="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/space_cow_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/space_cow"
+            app:civ_border_color="#530B7A"
+            app:civ_border_width="2dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/prime_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/prime"
+            app:civ_border_color="#530B7A"
+            app:civ_border_width="2dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/boris_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/boris"
+            app:civ_border_color="#530B7A"
+            app:civ_border_width="2dp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/choose_time"
+        android:layout_width="190dp"
+        android:layout_height="38dp"
+        android:text="@string/choose_time"
+        android:textSize="17sp" />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:timePickerMode="spinner"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_width="160dp"
+        android:layout_height="64dp"
+        android:text="@string/button"
+        android:textSize="16sp" />
+
+
+</LinearLayout>
