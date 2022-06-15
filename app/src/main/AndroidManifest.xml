@@ -10,8 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Material3.Dark">
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
+            android:name=".CallActivity"
+            android:label="@string/incoming_call_text"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,6 +19,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+
     </application>
 
 </manifest>

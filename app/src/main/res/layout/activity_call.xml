@@ -3,36 +3,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".CallActivity">
 
     <LinearLayout
+        android:background="@color/call_header_color"
         android:layout_width="match_parent"
-        android:layout_height="175dp"
-        android:background="@color/purple_200"
+        android:layout_height="125dp"
+
         android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/purple_500"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/incoming_call"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_margin="20dp"
-                android:text="@string/incoming_call_text" />
-        </LinearLayout>
 
         <TextView
             android:id="@+id/character_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:text="@string/prime_name"
             android:textSize="18sp" />
 
@@ -40,24 +27,63 @@
             android:id="@+id/phone_number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
             android:text="+38 0968285701"
             android:textSize="15sp" />
     </LinearLayout>
 
     <LinearLayout
+        android:background="@color/user_photo_color"
         android:orientation="vertical"
         android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="350dp">
+        android:layout_height="330dp">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/prime_image"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
             android:src="@drawable/prime"/>
 
     </LinearLayout>
 
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.motion.widget.MotionLayout
+            android:id="@+id/accept_motionLayout"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layoutDescription="@xml/accept_scene"
+            tools:showPaths="true">
+
+            <ImageView
+                android:id="@+id/accept_button"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/accept_call" />
+
+        </androidx.constraintlayout.motion.widget.MotionLayout>
+
+        <androidx.constraintlayout.motion.widget.MotionLayout
+            android:id="@+id/dicline_motionLayout"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layoutDescription="@xml/reject_scene"
+            tools:showPaths="true">
+
+            <ImageView
+                android:id="@+id/reject_button"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/reject_call"
+                tools:layout_editor_absoluteY="121dp" />
+
+        </androidx.constraintlayout.motion.widget.MotionLayout>
+    </LinearLayout>
 
 </LinearLayout>
