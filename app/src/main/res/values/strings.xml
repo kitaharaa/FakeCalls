@@ -8,4 +8,9 @@
     <string name="time">О котрій бажаєш побазікати?</string>
     <string name="choose_time">Обери час порятунку: </string>
     <string name="button">Час злиняти!</string>
+
+    <string name="incoming_call_text">Вхідний дзвінок...</string>
+    <string name="prime_name">Prime Minister of India</string>
+    <string name="boris_name">Борис Джонсонюк</string>
+    <string name="space_cow_name">Space Cow</string>
 </resources>
