@@ -13,4 +13,7 @@
     <string name="prime_name">Prime Minister of India</string>
     <string name="boris_name">Борис Джонсонюк</string>
     <string name="space_cow_name">Space Cow</string>
+
+    <string name="accept_button_description">Прийняти виклик</string>
+    <string name="reject_button_description">Відхилити виклик</string>
 </resources>

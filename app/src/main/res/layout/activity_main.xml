@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
 
     android:layout_margin="15dp"
@@ -26,6 +25,7 @@
 
         <EditText
             android:id="@+id/enter_number"
+            android:maxLength="13"
             android:layout_width="195dp"
             android:layout_height="50dp"
             android:gravity="center"
@@ -51,6 +51,9 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/space_cow_image"
+            android:clickable="true"
+            android:contentDescription="@string/space_cow_name"
+            android:onClick="onSpaceCowIconClicked"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginRight="25dp"
@@ -60,6 +63,9 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/prime_image"
+            android:clickable="true"
+            android:contentDescription="@string/prime_name"
+            android:onClick="onPrimeIconClicked"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:src="@drawable/prime"
@@ -68,6 +74,9 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/boris_image"
+            android:clickable="true"
+            android:contentDescription="@string/boris_name"
+            android:onClick="onBorisIconClicked"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginLeft="25dp"
@@ -92,7 +101,8 @@
         android:timePickerMode="spinner"/>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/submit_button"
+        android:onClick="onSubmitButtonClicked"
         android:layout_marginTop="50dp"
         android:layout_gravity="center"
         android:layout_width="160dp"

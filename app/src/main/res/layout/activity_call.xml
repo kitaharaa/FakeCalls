@@ -8,6 +8,7 @@
     tools:context=".CallActivity">
 
     <LinearLayout
+        android:id="@+id/header_linearLayout"
         android:background="@color/call_header_color"
         android:layout_width="match_parent"
         android:layout_height="125dp"
@@ -19,7 +20,6 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
-            android:text="@string/prime_name"
             android:textSize="18sp" />
 
         <TextView
@@ -27,7 +27,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:text="+38 0968285701"
             android:textSize="15sp" />
 
     </LinearLayout>
@@ -40,10 +39,9 @@
         android:layout_height="330dp">
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/prime_image"
+            android:id="@+id/character_image"
             android:layout_width="match_parent"
-            android:layout_height="270dp"
-            android:src="@drawable/prime"/>
+            android:layout_height="270dp"/>
 
     </LinearLayout>
 
@@ -62,6 +60,7 @@
 
             <ImageView
                 android:id="@+id/accept_button"
+                android:contentDescription="@string/accept_button_description"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:src="@drawable/accept_call" />
@@ -69,7 +68,7 @@
         </androidx.constraintlayout.motion.widget.MotionLayout>
 
         <androidx.constraintlayout.motion.widget.MotionLayout
-            android:id="@+id/dicline_motionLayout"
+            android:id="@+id/reject_motionLayout"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -78,6 +77,7 @@
 
             <ImageView
                 android:id="@+id/reject_button"
+                android:contentDescription="@string/reject_button_description"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:src="@drawable/reject_call"
