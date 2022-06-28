@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="25dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/phone_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone_number" />
+
+                <EditText
+                    android:id="@+id/enter_number"
+                    android:maxLength="13"
+                    android:imeOptions="actionDone"
+                    android:digits="+0123456789"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="@string/number_hint"
+                    android:inputType="phone"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/choose_character"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/choose_character" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/space_cow_image"
+                    android:clickable="true"
+                    android:contentDescription="@string/space_cow_name"
+                    android:onClick="onSpaceCowIconClicked"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/character_space_cow"
+                    app:civ_border_color="@color/default_color"
+                    app:civ_border_width="4dp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/prime_image"
+                    android:clickable="true"
+                    android:contentDescription="@string/prime_name"
+                    android:onClick="onPrimeIconClicked"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/character_prime"
+                    app:civ_border_color="@color/default_color"
+                    app:civ_border_width="4dp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/boris_image"
+                    android:clickable="true"
+                    android:contentDescription="@string/boris_name"
+                    android:onClick="onBorisIconClicked"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/character_boris"
+                    app:civ_border_color="@color/default_color"
+                    app:civ_border_width="4dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/choose_time"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:text="@string/choose_time"/>
+
+            <TimePicker
+                android:id="@+id/timePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="135dp"
+                android:timePickerMode="spinner"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_button"
+        android:onClick="onSubmitButtonClicked"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:text="@string/button" />
+
+</LinearLayout>

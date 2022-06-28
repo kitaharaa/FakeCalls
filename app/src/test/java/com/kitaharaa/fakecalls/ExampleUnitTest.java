@@ -1,4 +1,4 @@
-package com.hfad.fakecalls;
+package com.kitaharaa.fakecalls;
 
 import org.junit.Test;
 

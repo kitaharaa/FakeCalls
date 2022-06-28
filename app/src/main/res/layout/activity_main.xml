@@ -2,17 +2,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-
     android:layout_margin="15dp"
+    android:layout_gravity="center"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="wrap_content">
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingBottom="25dp"
+        android:paddingBottom="45dp"
         android:orientation="horizontal">
 
         <TextView
@@ -26,6 +25,8 @@
         <EditText
             android:id="@+id/enter_number"
             android:maxLength="13"
+            android:imeOptions="actionDone"
+            android:digits="+0123456789"
             android:layout_width="195dp"
             android:layout_height="50dp"
             android:gravity="center"
@@ -45,7 +46,7 @@
     <LinearLayout
         android:orientation="horizontal"
         android:gravity="center"
-        android:paddingBottom="25dp"
+        android:paddingBottom="45dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -57,9 +58,9 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginRight="25dp"
-            android:src="@drawable/space_cow"
-            app:civ_border_color="#530B7A"
-            app:civ_border_width="2dp" />
+            android:src="@drawable/character_space_cow"
+            app:civ_border_color="@color/default_color"
+            app:civ_border_width="4dp" />
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/prime_image"
@@ -68,9 +69,9 @@
             android:onClick="onPrimeIconClicked"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:src="@drawable/prime"
-            app:civ_border_color="#530B7A"
-            app:civ_border_width="2dp" />
+            android:src="@drawable/character_prime"
+            app:civ_border_color="@color/default_color"
+            app:civ_border_width="4dp" />
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/boris_image"
@@ -80,35 +81,33 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginLeft="25dp"
-            android:src="@drawable/boris"
-            app:civ_border_color="#530B7A"
-            app:civ_border_width="2dp" />
+            android:src="@drawable/character_boris"
+            app:civ_border_color="@color/default_color"
+            app:civ_border_width="4dp" />
 
     </LinearLayout>
-
 
     <TextView
         android:id="@+id/choose_time"
         android:layout_width="190dp"
-        android:layout_height="38dp"
+        android:layout_height="48dp"
         android:text="@string/choose_time"
         android:textSize="17sp" />
 
     <TimePicker
         android:id="@+id/timePicker"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:timePickerMode="spinner"/>
+        android:layout_height="185dp"
+        android:timePickerMode="spinner"
+        android:paddingBottom="45dp"/>
 
     <Button
         android:id="@+id/submit_button"
         android:onClick="onSubmitButtonClicked"
-        android:layout_marginTop="50dp"
         android:layout_gravity="center"
         android:layout_width="160dp"
         android:layout_height="64dp"
         android:text="@string/button"
         android:textSize="16sp" />
-
 
 </LinearLayout>
