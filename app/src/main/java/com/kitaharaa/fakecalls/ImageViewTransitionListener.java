@@ -1,9 +1,6 @@
 package com.kitaharaa.fakecalls;
 
-import android.hardware.Sensor;
-import android.hardware.SensorManager;
 import android.media.MediaPlayer;
-import android.os.PowerManager;
 import android.widget.ImageView;
 
 import androidx.constraintlayout.motion.widget.MotionLayout;
