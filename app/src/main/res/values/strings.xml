@@ -1,16 +1,29 @@
 <resources>
     <string name="app_name">Fake Calls</string>
 
-    <string name="preferences">Налаштування дзвінка</string>
-    <string name="phone_number">Введи контакти</string>
-    <string name="number_hint">тицяй номер сюди...</string>
-    <string name="choose_character">Обери героя: </string>
-    <string name="time">О котрій бажаєш побазікати?</string>
-    <string name="choose_time">Обери час порятунку: </string>
-    <string name="button">Час злиняти!</string>
+    <!--MainActivity string resources-->
+    <string name="enter_all_data_warning">Введи данні коректно!</string>
+    <string name="choosen_hero_info">Обраний герой: </string>
+    <string name="hero_info">Герой: </string>
+    <string name="number_info">Номер: </string>
+    <string name="approximate_time_info">Приблизний час до дзвінка: </string>
+    <string name="seconds_info">сек.</string>
+    <string name="already_execute_warning">Дзвінок вже було заплановано раніше...</string>
 
+    <string name="phone_number">Номер телефону</string>
+    <string name="number_hint">введи номер сюди...</string>
+    <string name="choose_character">Обери героя</string>
+    <string name="choose_time">Час порятунку</string>
+    <string name="button">Пора злиняти!</string>
+
+    <!--CallActivity string resources-->
     <string name="incoming_call_text">Вхідний дзвінок...</string>
+    <string name="preferences">Налаштування дзвінка</string>
+
     <string name="prime_name">Prime Minister of India</string>
     <string name="boris_name">Борис Джонсонюк</string>
     <string name="space_cow_name">Space Cow</string>
+
+    <string name="accept_button_description">Прийняти виклик</string>
+    <string name="reject_button_description">Відхилити виклик</string>
 </resources>

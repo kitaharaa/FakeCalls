@@ -84,7 +84,6 @@
                 tools:layout_editor_absoluteY="121dp" />
 
         </androidx.constraintlayout.motion.widget.MotionLayout>
-
     </LinearLayout>
 
 </LinearLayout>
