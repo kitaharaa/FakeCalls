@@ -4,13 +4,7 @@ you need and answering it to leave the unwanted person
 
 ## 👨‍💻 Tech Stack
 * Java
-* OOP
-* Activity
-* Design principles
 * Android SDK (Debugger, emulator, ADB)
-* Various UI components
-* Sensor TYPE_LIGHT
-* Media player
 
 ## 📱 UI
 ### Here you can enter phone number, time and choose your savior
