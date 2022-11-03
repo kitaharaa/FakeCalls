@@ -12,8 +12,8 @@ you need and answering it to leave the unwanted person
 * Sensor TYPE_LIGHT
 * Media player
 
-## UI
-### There you can enter your phone number, time and choose your savior
+## 📱 UI
+### There you can enter phone number, time and choose your savior
 ![](make_call.png)
 
 ### This interface will appear when fake call occurs
