@@ -13,7 +13,7 @@ you need and answering it to leave the unwanted person
 * Media player
 
 ## 📱 UI
-### There you can enter phone number, time and choose your savior
+### Here you can enter phone number, time and choose your savior
 ![](make_call2.png)
 
 ### This interface will appear when fake call occurs
