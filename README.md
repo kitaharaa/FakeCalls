@@ -14,7 +14,7 @@ you need and answering it to leave the unwanted person
 
 ## 📱 UI
 ### There you can enter phone number, time and choose your savior
-
+![](make_call.png)
 
 ### This interface will appear when fake call occurs
 ![](receiving_call.png)
