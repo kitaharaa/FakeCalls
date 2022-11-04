@@ -4,6 +4,7 @@ you need and answering it to leave the unwanted person
 
 ## 👨‍💻 Tech Stack
 * Java
+* Android studio
 * Android SDK (Debugger, emulator, ADB)
 
 ## 📱 UI
