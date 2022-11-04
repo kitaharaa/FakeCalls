@@ -8,7 +8,7 @@ you need and answering it to leave the unwanted person
 * Android SDK (Debugger, emulator, ADB)
 * Android Jetpack
 
-## 📱 UI
+## 📱 User Interface
 ### Here you can enter phone number, time and choose your savior
 ![](make_call2.png)
 
