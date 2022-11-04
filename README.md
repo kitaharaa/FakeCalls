@@ -6,6 +6,7 @@ you need and answering it to leave the unwanted person
 * Java
 * Android studio
 * Android SDK (Debugger, emulator, ADB)
+* Android Jetpack
 
 ## 📱 UI
 ### Here you can enter phone number, time and choose your savior
